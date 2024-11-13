@@ -2,7 +2,7 @@
 #Book Exchange Project
 #Exiting the application
 
-def main_menu(users, books):
+def main_menu():
     while True:
         print("Welcome to the Book Exchange Platform")
         print("1: Register New Account")
