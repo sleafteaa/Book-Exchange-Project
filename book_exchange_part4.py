@@ -25,20 +25,23 @@ def main_menu():
         print("Welcome to the Book Exchange Platform")
         print("1: Add a Book")
         print("2: Show Book Library")
-        print("3: Exchange Book")
-        print("4: Provide Feedback")
-        print("5: Exit")
-        choice = input("Choose an option from (1-7)")
-        if choice > 5 or choice < 1 or choice is not int:
+        print("3: Book Lookup")
+        print("4: Exchange Book")
+        print("5: Provide Feedback")
+        print("6: Exit")
+        choice = input("Choose an option from (1-6)")
+        if choice > 6 or choice < 1 or choice is not int:
             print("Please enter a correct choice")
         elif choice == 1:
-            #call add book function
+            add_book(book_list)
         elif choice == 2:
-            #call show library function
+            list_books(book_list)
         elif choice == 3:
-            #call complete exchange function
+            search_books(book_list)
         elif choice == 4:
-            #call feedback function
+            #call exchange book function
         elif choice == 5:
+            #call feedback function
+        elif choice == 6:
             print("Exiting Application...")
             break
