@@ -28,9 +28,10 @@ def main_menu():
         print("3: Book Lookup")
         print("4: Exchange Book")
         print("5: Provide Feedback")
-        print("6: Exit")
-        choice = input("Choose an option from (1-6)")
-        if choice > 6 or choice < 1 or choice is not int:
+        print("6: Show Feedback")
+        print("7: Exit")
+        choice = input("Choose an option from (1-7)")
+        if choice > 7 or choice < 1 or choice is not int:
             print("Please enter a correct choice")
         elif choice == 1:
             add_book(book_list)
@@ -41,7 +42,9 @@ def main_menu():
         elif choice == 4:
             #call exchange book function
         elif choice == 5:
-            #call feedback function
+            open_feedback_screen(user)
         elif choice == 6:
+            open_feedback_summary(user)
+        elif choice == 7:
             print("Exiting Application...")
             break
